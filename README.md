@@ -4,7 +4,7 @@
 
 WebMCP Deadbolt is a provider-neutral capability layer that makes storefront operations understandable to browser agents while keeping consequential actions visibly and provably closed until the implementation, deployment policy, and current authorization all permit them.
 
-- Live demo: publishing is the next release step; no unverified URL is listed.
+- Live demo: [faxanfm.github.io/webmcp-deadbolt](https://faxanfm.github.io/webmcp-deadbolt/)
 - Public demo video: not recorded yet; the submission gate requires a public narrated YouTube video under three minutes.
 
 ## Three prompts judges can try
@@ -83,4 +83,4 @@ The test suite covers capability states, all gate combinations, inherited-proper
 
 ## Submission status
 
-The code path is runnable and tested. A public deployment, WebMCP-browser run, five recorded agent-behavior evaluations, narrated public video, and final Devpost submission remain release gates; they are not represented as complete here.
+The code path, public deployment, CI, and live WebMCP-browser discovery are verified. Five recorded agent-behavior evaluations, a narrated public video, and the final Devpost submission remain release gates; they are not represented as complete here.
