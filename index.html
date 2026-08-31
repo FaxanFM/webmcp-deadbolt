@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fail-closed capability gating and structured refusals for WebMCP commerce tools.">
+    <title>WebMCP Deadbolt</title>
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">Fail-Closed Commerce for Browser Agents</p>
+      <h1>WebMCP <span>Deadbolt</span></h1>
+      <p class="lede">A storefront where people and agents share one cart—and consequential actions stay visibly closed until every gate is real.</p>
+      <div class="hero-status" aria-label="Demo status">
+        <span class="pulse" aria-hidden="true"></span>
+        <span id="webmcp-status">Checking WebMCP support…</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel storefront" aria-labelledby="storefront-heading">
+        <div class="section-title">
+          <div><p class="kicker">01 / Fixture storefront</p><h2 id="storefront-heading">Trail Supply Co.</h2></div>
+          <button id="reset" class="quiet">Reset demo</button>
+        </div>
+        <div id="catalog" class="catalog"></div>
+      </section>
+
+      <section class="panel cart" aria-labelledby="cart-heading">
+        <div class="section-title">
+          <div><p class="kicker">02 / Shared state</p><h2 id="cart-heading">Human + agent cart</h2></div>
+          <span id="cart-origin" class="origin">No mutations yet</span>
+        </div>
+        <div id="cart-lines" class="cart-lines" aria-live="polite"></div>
+        <div class="total"><span>Total</span><strong id="cart-total">$0.00 USD</strong></div>
+      </section>
+
+      <section class="panel capabilities" aria-labelledby="capabilities-heading">
+        <div class="section-title">
+          <div><p class="kicker">03 / Public protocol</p><h2 id="capabilities-heading">Capability console</h2></div>
+          <span class="not-authority">Display only—not an auth boundary</span>
+        </div>
+        <div id="capability-list" class="capability-list"></div>
+      </section>
+
+      <section class="panel ledger" aria-labelledby="ledger-heading">
+        <div class="section-title">
+          <div><p class="kicker">04 / Observable behavior</p><h2 id="ledger-heading">Activity ledger</h2></div>
+          <span id="ledger-count" class="origin">0 calls</span>
+        </div>
+        <div id="ledger-entries" class="ledger-entries" aria-live="polite"><p class="empty">Tool calls and refusals will appear here.</p></div>
+      </section>
+
+      <section class="panel proofs" aria-labelledby="proofs-heading">
+        <div class="section-title">
+          <div><p class="kicker">05 / Attack the gate</p><h2 id="proofs-heading">Adversarial proofs</h2></div>
+        </div>
+        <div class="proof-buttons">
+          <button data-proof="prototype">Run prototype-pollution proof</button>
+          <button data-proof="composition">Run composition-removal proof</button>
+          <button data-proof="positive">Run positive control</button>
+        </div>
+        <pre id="proof-output" tabindex="0">Choose a proof. Each runs in isolation and cleans up immediately.</pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>Deadbolt prepares the handoff. It does not place orders, move money, or turn hints into authorization.</p>
+    </footer>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
