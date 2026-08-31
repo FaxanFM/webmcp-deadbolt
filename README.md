@@ -83,4 +83,4 @@ The test suite covers capability states, all gate combinations, inherited-proper
 
 ## Submission status
 
-The code path, public deployment, CI, and live WebMCP-browser discovery are verified. Five recorded agent-behavior evaluations, a narrated public video, and the final Devpost submission remain release gates; they are not represented as complete here.
+The code path, public deployment, CI, and live WebMCP-browser discovery are verified. Five recorded agent-behavior evaluations, a narrated public video, and the final Devpost submission remain release gates; they are not represented as complete here. See the current [rules compliance ledger](RULES_COMPLIANCE.md).
