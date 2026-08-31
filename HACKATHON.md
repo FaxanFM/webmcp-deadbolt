@@ -6,7 +6,7 @@ The WebMCP Challenge submission period runs from August 25, 2026 at 11:00 a.m. P
 
 ## First challenge-specific commit
 
-The initial commit hash will be added immediately after the repository's first commit. Commit history will remain dated and will not be squashed before judging.
+`55ee3d4` — `Build WebMCP Deadbolt challenge prototype` — committed August 31, 2026. Commit history will remain dated and will not be squashed before judging.
 
 ## Prior work
 
@@ -28,7 +28,7 @@ The WebMCP Deadbolt product concept and the participant-supplied final build spe
 
 ## Commit range
 
-The challenge range begins with the initial commit recorded above and continues through the commit submitted to Devpost.
+The challenge range begins at `55ee3d4` and continues through the commit submitted to Devpost.
 
 ## Third-party libraries, APIs, and assets
 
